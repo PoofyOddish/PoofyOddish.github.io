@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+h3 {
+    background-color: rgb(250, 230, 30);
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    background-color: rgb(250, 246, 10);
+}
+
+a:hover {
+    color: green;
+}
+
+#good_flavors > li:hover {
+    font-size: 15px;
+    color: green;
+    font-style: italic;
+}
+
+
+#bad_flavors > li:hover {
+    font-size: 40px;
+    color:red;
+    text-transform: uppercase;
+}
+
+
+ul > li:nth-child(even) {
+    color:gray;
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    font-size: 6px;
+}
+
+.angry {
+    color:red;
+    text-emphasis: bold;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#false_idol,#pring_pic {
+    text-align: center;
+}
+
+li#despair:hover {
+    width: 100vh;
+    font-size: 200px;
+    color: purple;
+    background-color: black;
+    font-style: bold;
+    padding-left: 0;
+    transition: color 10s, font-size 10s, background-color 10s;
+
+}
+
+.two_col {
+    float: left;
+    width: 50%;
+    align-items: center;
+}
+
+#why_great, #trust_issues {
+    clear: both;
+}
+
