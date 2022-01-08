@@ -1,3 +1,7 @@
+/* 
+Core components
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -11,8 +15,9 @@ h3 {
     background-color: rgb(250, 230, 30);
     height: 40px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
+
 
 body {
     background-color: rgb(250, 246, 10);
@@ -60,7 +65,7 @@ hr {
     padding: 0;
 }
 
-#false_idol,#pring_pic {
+#false_idol,#pring_pic, #bo_gif {
     text-align: center;
 }
 
@@ -75,13 +80,34 @@ li#despair:hover {
 
 }
 
-.two_col {
-    float: left;
-    width: 50%;
-    align-items: center;
-}
-
-#why_great, #trust_issues {
+#why_great {
     clear: both;
 }
 
+/* 
+Small Devices (<768px)
+*/
+
+@media (max-width: 767px) {
+    h1,h2 {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 10px;
+    }
+
+    ul > li:nth-child(even) {
+        font-size: 10px;
+    }
+    
+    
+    h3 {
+        font-size: 15px;
+        height: 30px;
+    }
+
+    body {
+        font-size: 10px;
+    }
+}

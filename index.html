@@ -1,22 +1,31 @@
 <!doctype html>
 
-<!--doctype is required by HTML 5 standards-->
+<html lang="en">
 
-<html>
 <head>
     <meta charset="utf-8"> <!-- standalone tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         Prongles
     </title>
 
+    <!--<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    
+<!--<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 <h1>
     Pringles Fan Page baybeeeee~
 </h1>
-<div>
+<div class='container'>
     <h2>Table of Contents</h2>
     <ol>
         <li><a href="#what">What are pringels</a></li>
@@ -28,26 +37,25 @@
 
 <hr/>
 
-<div>
-    <div id="what">
+<div class='container'>
+    <div id="what" class='container'>
         <h3>What is a pringle</h3>
-        <div>
-            <span class="two_col" id="pring_text">
+        <div class='row'>
+            <div class="col" id="pring_text">
                     A pringle is a tubular potato-like substance boop boop beep
-            </span>
+            </div>
             
-            <span class="two_col" id="pring_pic">
-                <img src="https://www.pikpng.com/pngl/m/497-4971319_pringles-transparent-background-transparent-pringle-chips-clipart.png" width =30% height=30% alt="Mmmmmm pringles">
-                
-            </span>
+            <div class="col" id="pring_pic">
+                <img src="https://www.pikpng.com/pngl/m/497-4971319_pringles-transparent-background-transparent-pringle-chips-clipart.png" width = 150px height=150px alt="Mmmmmm pringles">
+            </div>
         </div>
     </div>
 </div>
 
-<div id="why_great">
+<div id="why_great" class='container'>
     <h3>why are pringles GREAT</h3>
-    <div id="great_content">
-        <span id="great_text" class="two_col">
+    <div id="great_content" class="row">
+        <span id="great_text" class="col">
                 if you weren't told pringles come in many varieties such as
             <ul>
                 <li>salty</li>
@@ -68,7 +76,7 @@
                 <li>satan and vinegar</li>
             </ul>
         </span>
-        <span id="false_idol" class="two_col">
+        <span id="false_idol" class="col">
             <img src="https://images.kglobalservices.com/www.pringles.com_ca_en/en_ca/product/kic-32076/prod_img-1395486_prod_img-1395486.png" alt="evil salt and vinegar chips" height = 300px >
             <div>
                 He is a <span class="angry"> false god </span> do n ot trust!
@@ -76,22 +84,26 @@
         </span>
     </div>
 </div>
-<div id="trust_issues">
+<div id="trust_issues" class='container'>
     <h3>do i trust pringles?</h3>
-    <p>
-        in short, <span class="angry">no!!!</span>
-        <br>
-        corporate entities are not to be trusted
-        <br>
-        pringles are a false idol a BRAND
-        <br>
-        just look at this commentary from a large child
-        what pain are they hiding behind <span class="angry">comedy</span>
-        <br>
-        <img src="https://64.media.tumblr.com/72ef0cf1883e3a0c21947112fdf01d75/tumblr_inline_owl8p1VBYS1uv423w_500.gifv" width ="320" height="240" alt="bo burnham pringles">
-        <br>
-        <span style="font-size:10px; font-style: italic">i'll still buy them tho js</span>
-    </p>
+    <div class="row">
+        <p class='col'>
+            in short, <span class="angry">no!!!</span>
+            <br>
+            corporate entities are not to be trusted
+            <br>
+            pringles are a false idol a BRAND
+            <br>
+            just look at this commentary from a large child
+            what pain are they hiding behind <span class="angry">comedy</span>
+            <br>
+            <span style="font-size:10px; font-style: italic">i'll still buy them tho js</span>
+        </p>
+        <div class='col' id="bo_gif">
+            <img src="https://64.media.tumblr.com/72ef0cf1883e3a0c21947112fdf01d75/tumblr_inline_owl8p1VBYS1uv423w_500.gifv" width ="320" height="240" alt="bo burnham pringles">
+        </div>
+    </div>
+    <br>
 </div>
 
 <footer>
