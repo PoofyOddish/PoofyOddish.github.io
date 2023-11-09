@@ -1,113 +1,475 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8"> <!-- standalone tag-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        Prongles
-    </title>
+  <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
 
-    <!--<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
 
+  <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+  <title>DS @ BHA</title>
+
+  <!-- The website stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- The website JavaScript file -->
+  <script src="/script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://kit.fontawesome.com/5e0ff051eb.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
-<body>
-    
-<!--<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<body class="bdy">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <!--
+      The body includes the content you see in the page
+      Each element is defined using tags, like this <div></div>
+      The attributes like class="wrapper" let us style elements in the CSS
+    -->
+  <div class="wrapper">
+    <div class="content" role="main">
+      <div class="instructions">
+        <div class="container align-middle">
+          <div id="intro" class="row p-3 text-center" data-color="#10e88a">
+            <h1 class="title p-3">Data Science @ BHA</h1>
 
-<h1>
-    Pringles Fan Page baybeeeee~
-</h1>
-<div class='container'>
-    <h2>Table of Contents</h2>
-    <ol>
-        <li><a href="#what">What are pringels</a></li>
-        <li><a href="#why_great">Why are pringles so great</a></li>
-        <li><a href="#trust_issues">do i trust pringles</a></li>
-    </ol>
+            <br />
 
-</div>
-
-<hr/>
-
-<div class='container'>
-    <div id="what" class='container'>
-        <h3>What is a pringle</h3>
-        <div class='row'>
-            <div class="col" id="pring_text">
-                    A pringle is a tubular potato-like substance boop boop beep
-            </div>
-            
-            <div class="col" id="pring_pic">
-                <img src="https://www.pikpng.com/pngl/m/497-4971319_pringles-transparent-background-transparent-pringle-chips-clipart.png" width = 150px height=150px alt="Mmmmmm pringles">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="why_great" class='container'>
-    <h3>why are pringles GREAT</h3>
-    <div id="great_content" class="row">
-        <span id="great_text" class="col">
-                if you weren't told pringles come in many varieties such as
-            <ul>
-                <li>salty</li>
-                <li>cronchy</li>
-                <li>monchy</li>
-            </ul>
-            here are my favorite flavors (unordered)
-            <ul id="good_flavors">
-                <li>BBQ</li>
-                <li id="despair">despair</li>
-                <li>Sour Cream + Onion</li>
-                <li>Original</li>
-                <li>Pizza</li>
-            </ul>
-            if you like any of these flavor dont talk to me!!!
-            <ul id="bad_flavors">
-                <li>that cursed cheese one</li>
-                <li>satan and vinegar</li>
-            </ul>
-        </span>
-        <span id="false_idol" class="col">
-            <img src="https://images.kglobalservices.com/www.pringles.com_ca_en/en_ca/product/kic-32076/prod_img-1395486_prod_img-1395486.png" alt="evil salt and vinegar chips" height = 300px >
+            <img src="https://cdn.glitch.global/832bd3ea-22e5-49dc-b849-d176f9f0a8f2/Analytics.svg?v=1698890336279"
+              class="illustration" style="display: block; margin-left: auto; margin-right: auto" />
+          </div>
+          <div id="existentialcrisis" class="row p-3 align-items-center" data-color="#7f3995">
+            <h2 class="header">Hello!</h2>
             <div>
-                He is a <span class="angry"> false god </span> do n ot trust!
-            </div>
-        </span>
-    </div>
-</div>
-<div id="trust_issues" class='container'>
-    <h3>do i trust pringles?</h3>
-    <div class="row">
-        <p class='col'>
-            in short, <span class="angry">no!!!</span>
-            <br>
-            corporate entities are not to be trusted
-            <br>
-            pringles are a false idol a BRAND
-            <br>
-            just look at this commentary from a large child
-            what pain are they hiding behind <span class="angry">comedy</span>
-            <br>
-            <span style="font-size:10px; font-style: italic">i'll still buy them tho js</span>
-        </p>
-        <div class='col' id="bo_gif">
-            <img src="https://64.media.tumblr.com/72ef0cf1883e3a0c21947112fdf01d75/tumblr_inline_owl8p1VBYS1uv423w_500.gifv" width ="320" height="240" alt="bo burnham pringles">
-        </div>
-    </div>
-    <br>
-</div>
+              <p>
+                My name is
+                <a href="https://jordan-serna.com" target="_blank">Jordan</a>,
+                I use she/they pronouns, and I hope to be BHA's first director
+                of data science. (<a
+                  href="https://docs.google.com/document/d/1HfDL9PefP9xAR0I6IH5U7QwkqJgJEnspXAlSutM5Myo/edit?usp=sharing"
+                  target="_blank">Resume</a> / <a
+                  href="https://docs.google.com/document/d/1nafpGPchnLmNAXRLFC6eVBjTmxLgRYsFJPM5lYNsr2E/edit?usp=sharing"
+                  target="_empty"> Cover Letter</a>)<br />
+                <br />
 
-<footer>
-    This page was developed by a sentient pringle
-</footer>
+                <a href="https://www.kff.org/statedata/mental-health-and-substance-use-state-fact-sheets/colorado/"
+                  target="_empty">In 2023</a>, three in ten adults in Colorado reported symptoms
+                of <strong>anxiety and/or depressive disorder</strong>. Of those three
+                adults with reported symptoms, 1 adult had
+                an <strong>unmet need</strong> for services.
+                <br><br>
+                <span style="display: table; margin: 0 auto;">
+                  <i class="fa-solid fa-person fa-2xl"></i>
+                  <i class="fa-solid fa-person fa-2xl"></i>
+                  <i class="fa-solid fa-person fa-2xl"></i>
+                  <i class="fa-solid fa-person fa-2xl"></i>
+                  <i class="fa-solid fa-person fa-2xl"></i>
+                  <i class="fa-solid fa-person fa-2xl"></i>
+                  <i class="fa-solid fa-person fa-2xl"></i>
+                  <i class="fa-solid fa-person fa-2xl" style="color: #4d22b3;"></i>
+                  <i class="fa-solid fa-person fa-2xl" style="color: #4d22b3;"></i>
+                  <i class="fa-solid fa-person fa-2xl" style="color: #d58400;"></i>
+                </span>
+
+                <br />
+                I have a vision for data science at BHA to
+                <strong>create data infrastructure, spark curiosity, and unlock
+                  insights</strong>
+                to ensure that all people in Colorado have access to
+                accessible, meaningful, and trusted behavioral health services
+                when they need it.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExample1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Learn more about Jordan
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col">
+                        <div>
+                          <p>
+                            I currently serve as a
+                            <strong>data lead and lead data engineer</strong>
+                            within the Health IT division at BHA where I am
+                            overseeing the development of a centralized
+                            cloud-based data repository.
+
+                            <br /><br />
+                            This body of work involves the integration and
+                            ingestion of
+                            <strong>40+ data sources</strong>
+                            from disparate systems into a common data model
+                            and forms the foundation of how BHA will
+                            facilitate care coordination in a future state.
+                            <br /><br />
+                            My efforts to date have led to increases the
+                            quality and secure availability of BHA data which
+                            has yielded a
+                            <strong>reduction in time spent on data collection,
+                              cleaning, and analysis</strong>.
+                          </p>
+                        </div>
+                        <div id="reportcard" class="row align-items-center" data-color="#7f3995">
+                          <br /><br />
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Professional Competencies
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                    Professional Competencies
+                                  </h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Topic</th>
+                                        <th scope="col">Experience</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">Technology</th>
+                                        <td>SQL</td>
+                                        <td>Advanced</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row"></th>
+                                        <td>Python</td>
+                                        <td>Intermediate</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row"></th>
+                                        <td>Tableau</td>
+                                        <td>Advanced</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row"></th>
+                                        <td>Snowflake</td>
+                                        <td>Advanced</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Communications</th>
+                                        <td>Public Speaking</td>
+                                        <td>Intermediate</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Interpersonal</th>
+                                        <td>Technical Education</td>
+                                        <td>Advanced</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Close
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="justify-center col">
+                          <img
+                            width="100%"
+                            style="border-radius: 50%"
+                            class="responsive"
+                            src="https://cdn.glitch.global/832bd3ea-22e5-49dc-b849-d176f9f0a8f2/pumpkin_head.jpeg?v=1698880864713"
+                          />
+                        </div>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="bignumbers" class="row p-3">
+            <div class="col">
+              <h2 class="header">Making an Impact</h2>
+              <h6>
+                My impact to BHA cannot be understated as it ties in directly
+                to
+                <a href="https://drive.google.com/file/d/1EZXHhWtgoL_E7kp7g0gJ0QJOw33bqdSd/view" target="_empty">BHA's
+                  2023-25 Strategic Plan</a>.
+              </h6>
+              <div>
+                <li>
+                  I am contributing to the
+                  <strong>expansion and support of a BH workforce</strong>
+                  through overseeing integration and ingestion of
+                  <strong>disparate 40+ data sources</strong> to reduce
+                  administrative burden for providers while improving data
+                  quality.
+                </li>
+                <br />
+                <li>
+                  I am improving <strong>access to BH care</strong> through
+                  managing data integration between Colorado
+                  <a href="https://socgov06.my.salesforce-sites.com/LADDERS" target="_empty">LADDERS</a>
+                  system and
+                  <a href="https://ownpath.co" target="_empty">OwnPath.co</a>
+                  to facilitate accurate and timely public information about
+                  <strong>700+ behavioral health facilities</strong>
+                </li>
+                <br />
+                <li>
+                  [might delete this one] Developed data analytics strategy
+                  for the State of Colorado's modernized Central Registry with
+                  <strong>3+ semi-real time cloud dashboards</strong>
+                </li>
+                <br />
+                <li>
+                  I am improving BHA's
+                  <strong>accountability to population-specific standards of
+                    care</strong>
+                  through spearheading modernizing youth mental health data
+                  collection and interoperability, including the ingestion of
+                  <strong>1000+ legacy data files</strong> for youth served in
+                  Colorado
+                </li>
+
+                <br />
+                <li>
+                  I am <strong>developing BHA's workforce</strong> through
+                  provides mentorship or oversight to
+                  <strong>7+ staff members</strong>
+                </li>
+                <br />
+                <li>
+                  I am <strong>championing BHA's values</strong> through
+                  presenting to over <strong>400 attendees</strong> at Grace
+                  Hopper Celebration to highlight the technological
+                  achievements at BHA warehousing
+                </li>
+              </div>
+              <br />
+              <h6>
+                If I have achieved all of this as an individual contributor,
+                imagine what I will do as BHA's Director of Data Science.
+              </h6>
+            </div>
+          </div>
+
+          <div id="futuredata" class="row p-3" data-color="#0d78e7">
+            <div>
+              <h2 class="header">Better Together: Our Future of BHA Data</h2>
+              <p>
+                What is exciting to me about the current state of BHA data is
+                how much opportunity is within reach. We have brilliant,
+                mission-driven team members and resourcing available to build
+                the tools and analytics in service of BHA priorities. All we
+                need now is a leader to engage in and oversee this work, and I
+                believe that person is me.
+                <br /><br />
+
+                I have had the pleasure of working on both the analytics
+                (BHAEE) and IT (HIT) teams at BHA. This has offered me unique
+                insight into the state of data at BHA. With this expertise, I
+                envision initial growth in the following areas of BHA data
+                science:
+              </p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Data Infrastructure and Interoperability
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    To build a data science practice, it all starts with a
+                    strong foundation -
+                    <strong>data infrastructure and system interoperability</strong>. These two topics go hand-in-hand
+                    to revolutionize the
+                    ways in which we currently collect, store, and transmit
+                    data.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Data Governance and Equity
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Both governance and equity are terms that are widely
+                    thrown around, but the definitions of both terms are not
+                    always agreed upon. Through having an established data
+                    science practice, there is an opportunity to co-create
+                    definitions for what
+                    <strong> data governance and equity</strong> mean to BHA.
+                    <br /><br />
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-secondary" data-bs-toggle="collapse" href="#opendata" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        A note on data equity re: open data
+                      </a>
+                    </div>
+                    <br />
+                    <div class="collapse" id="opendata">
+                      <div class="card card-body">
+                        Notably, I see opportunity for data equity from a data
+                        collection and a data utilization perspective. While
+                        there is a focus on ensuring the ways we collect data
+                        are equitable as well as clinically and
+                        culturally-appropriate, the BHA has an opportunity to
+                        recognize that there is privilege in data access, and
+                        has an exciting opportunity to co-create and deeply
+                        engage in an open data policy for non-sensitive data
+                        to ensure communities have equitable access to
+                        publicly-funded data.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Advancing Analytics
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Once there is a stable data foundation to work from and
+                    guidance on how and when data should be used, I envision
+                    BHA will be able to rapidly
+                    <strong>transform data into insights</strong>.
+                    <br /><br />
+                    I see a future where data users are able to lean into data
+                    science principles, even if they're not aware of it! I'm
+                    excited for a future in which we can begin experimenting
+                    with BHA data to yield insights about the experiences of
+                    people in Colorado currently seeking or receiving care.
+                    <br /><br />
+                    The beautiful thing about this concept is anyone can
+                    participate in this process to advance BHA analytics.
+                    <li>
+                      We can <strong>create a culture</strong> where BHA staff
+                      are curious about data and want to learn more about what
+                      is available
+                    </li>
+                    <li>
+                      We can <strong>create trust</strong> with the
+                      communities we serve so that community members have
+                      psychological safety in asking us questions
+                    </li>
+                    <li>
+                      We can
+                      <strong>co-create meaningful outputs</strong> with our
+                      provider networks to share insights with our critical
+                      partners in the BH space
+                    </li>
+
+                    <br />
+                    While I'm excited about opportunities in advanced analytics
+                    and modeling, I'm even more excited about advancing our
+                    analytics together.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="whyme" class="row p-3 align-items-center" data-color="#7f3995">
+            <div class="row">
+              <h2 class="header">
+                I'm ready for this. <span id="letsbuild"></span>
+              </h2>
+
+              <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  new TypeIt("#letsbuild", {
+                    speed: 100,
+                    startDelay: 900,
+                    waitUntilVisible: true,
+                  })
+                    .type("Let's get to work.", { delay: 100 })
+
+                    .delete(12)
+                    .type("co-create together.", { delay: 400 })
+                    .pause(400)
+                    .move(-10)
+                    .pause(400)
+                    .delete(9)
+                    .type("b", { delay: 350 })
+                    .type("u", { delay: 350 })
+                    .type("i", { delay: 350 })
+                    .type("l", { delay: 350 })
+                    .type("d", { delay: 350 })
+                    .move(null, { to: "END" })
+                    .delete(15)
+                    .type("<strong>get started</strong>.", { delay: 400 })
+                    .go();
+                });
+              </script>
+            </div>
+            <div class="row">
+              <div class="col">
+                I am applying to be BHA's Director of Data Science because
+                <strong>I believe in what we're doing.</strong>
+                I am hungry to engage with BHA staff and communities to
+                establish a data science practice that co-creates new and
+                transformed systems and processes in support of
+                establishing a behavioral health system that we all deserve,
+                and that work starts now.
+                <br /><br />
+                <p>
+                  Thank you for your consideration.
+                  <br /><br />
+                  jb
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
